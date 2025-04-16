@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import axios from "axios";
+import Navbar from "./Navbar"; // Import your Navbar component
+import Footer from "./Footer"; // Import your Footer component
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
   const [status, setStatus] = useState("");
 
@@ -16,19 +15,12 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setStatus("Sending...");
+    setStatus("Message submitted (but no backend logic here).");
 
-    try {
-      const response = await axios.post("http://localhost:3000/api/contact", formData);
-      console.log(response); // Log the response here
-      setStatus("Message sent successfully!");
-      setFormData({ name: "", email: "", message: "" });
-    } catch (err) {
-      console.error(err); // Log the error here
-      setStatus("Failed to send message. Please try again.");
-    }
+    // Clear form data after submission
+    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
