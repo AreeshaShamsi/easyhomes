@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
-import Navbar from "./Navbar"; // Import your Navbar component
-import Footer from "./Footer"; // Import your Footer component
+import Navbar from "./Navbar"; 
+import Footer from "./Footer"; 
 
 const Contact = () => {
   const [formData, setFormData] = useState({
