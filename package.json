@@ -145,7 +145,6 @@
     "yallist": "^3.1.1",
     "yocto-queue": "^0.1.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -159,5 +158,8 @@
   "bugs": {
     "url": "https://github.com/AreeshaShamsi/easyhomes/issues"
   },
-  "homepage": "https://github.com/AreeshaShamsi/easyhomes#readme"
+  "homepage": "https://github.com/AreeshaShamsi/easyhomes#readme",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.0"
+  }
 }
