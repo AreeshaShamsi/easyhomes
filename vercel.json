@@ -9,8 +9,6 @@
   "routes": [
     { "src": "/(.*)", "dest": "/index.html" }
   ],
-  "env": {
-    "LIGHTNINGCSS_FORCE_WASM": "1"
-  }
+  
 }
 
